@@ -1,0 +1,160 @@
+body {
+	min-width: 320px;
+	overflow-x: hidden ;
+	font-family: 'Roboto', sans-serif; 
+}
+a {
+	display: block;
+}
+img {
+	max-width: 100px;
+	height: auto;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*Header*/
+header {
+	min-height: 300px;
+
+}
+.headerfon {
+	background-color: #0dcaf0;
+}
+.logo {
+	margin-top: 50px;
+}
+.soc-icons {
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-start;
+
+}
+.soc-icons-item {
+	width: 50px;
+	height: 50px;
+	background: #F8F1F1;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 10px;
+	transition: all .5s ease;
+}
+.soc-icons-item i.fa-brands {
+	font-size: 20px;
+	counter-reset: #000;
+}
+.soc-icons-item:hover {
+	transform: translateY(-10px);
+
+}
+.menu-header {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.menu-header-item {
+	background-color: #ffc107;
+	width: 150px;
+	height: 35px;
+	border-radius: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s ease;
+
+}
+.menu-header-link {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-decoration: none;
+}
+.menu-header-item:hover {
+	opacity: .5;
+}
+.active {
+	background-color: red;
+}
+/*content*/
+main {
+	margin-top: 50px;
+}
+article + article {
+	margin-top: 50px;
+}
+article {
+	border-bottom: 2px dashed #c4c4c4;
+	padding-bottom: 10px;
+}
+article:last-child {
+	border-bottom: none;
+	/*Пунктирная прямая исчезает для последнего элемента*/
+}
+.article-header {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700px;
+	margin-bottom: 10px;
+}
+.post-text {
+	font-size: 14px;
+	margin: 0;
+	margin-top: 10px;
+}
+a.readmore {
+	margin-top: 100px;
+	background-color: #ffc107;
+	width: 150px;
+	height: 40px;
+	color: white;
+	text-transform: capitalise;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+}
+/*Sidebar*/
+
+aside {
+	background-color: #20c997;
+	padding-top: 30px;
+}
+.widget {
+	margin-top: 50px;
+	background-color: #ffc107;
+	height: 250px;
+	margin-top: 50px;
+
+}
+h3.widget-title {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+
+}
+ul.widget-list {
+	text-align: center;
+	margin-top: 20px;
+}
+li.widget-item {
+	position: relative;
+
+}
+li.widget-item + li.widget-item {
+	margin-top: 10px;
+}
+li.widget-item::before {
+	content: '\f02e';
+	position: absolute;
+	left: 30%;
+	top: 0;
+	color: #fff;
+	font-family: Font Awesome\ 5 Free ;
+}
+a.widget-item {
+	color: #fff;
+	text-decoration: none;
+}
